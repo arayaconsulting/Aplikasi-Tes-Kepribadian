@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Kepribadian Personality Plus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="intro-container">
+        <img src="logo.png" alt="Logo Perusahaan" class="logo">
+        <h1>Temukan kepribadian anda, sebelum mengikuti sesi bersama Mas Ali Mahfud</h1>
+        <p>Jawab 40 pertanyaan singkat untuk mengetahui tipe kepribadian Anda berdasarkan Personality Plus.</p>
+        <button id="start-button">Mulai Tes</button>
+    </div>
+
+    <div class="container hidden" id="quiz-container">
+        <h2 id="question-text"></h2>
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="options-container">
+            </div>
+        <div id="quiz-nav">
+            <button id="prev-button" class="hidden">Sebelumnya</button>
+            <button id="next-button">Selanjutnya</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="result-container">
+        <h2 id="result-title"></h2>
+        <p id="result-description"></p>
+        <button id="restart-button">Ulangi Tes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
