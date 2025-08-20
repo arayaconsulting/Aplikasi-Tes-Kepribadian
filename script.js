@@ -248,23 +248,23 @@ const quizQuestions = [
         options: [
             { text: "PLAIN - tidak menonjol sama sekali, biasa saja dan hampir tidak menunjukkan emosi", type: "Phlegmatic" },
             { text: "PESSIMISTIC - pesimis, sementara mengharapkan yang terbaik, biasanya lebih dulu melihat sisi buruk dari sebuah situasi", type: "Melancholic" },
-            { text: "PROUD - punya harga diri tinggi, melihat dirinya sebagai selalu benar", type: "Choleric" },
+            { text: "PROUD - punya harga diri tinggi, melihat dirinya sebagai selalu benar dan orang yang tepat untuk melakukan tugas itu", type: "Choleric" },
             { text: "PERMISSIVE - membiarkan orang lain melakukan apa yang disukainya agar ia dapat diterima", type: "Sanguine" }
         ]
     },
     {
         question: "29. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "ANGERED EASILY - mudah marah, punya perangai seperti anak-anak yang suka ngambek atau marah meledak-ledak", type: "Sanguine" },
-            { text: "AIMLESS - tidak punya tujuan / inisiatif", type: "Phlegmatic" },
-            { text: "ARGUMENTATIVE - merangsang argumen/ perdebatan karena merasa dirinya benar", type: "Choleric" },
+            { text: "ANGERED EASILY - mudah marah, punya perangai seperti anak-anak yang suka ngambek atau marah meledak-ledak tapi cepat lewat dan dilupakan", type: "Sanguine" },
+            { text: "AIMLESS - tidak punya tujuan / inisiatif, bukan orang yang dapat menentukan tujuan dan tidak adan keinginan untuk menjadi orang yang punya tujuan", type: "Phlegmatic" },
+            { text: "ARGUMENTATIVE - merangsang argumen/ perdebatan karena merasa dirinya benar tanpa perhatikan situasi / keadaan", type: "Choleric" },
             { text: "ALIENATED - merasa terkucilkan dari orang lain, seringkali karena merasa tidak aman atau takut orang tidak menyukainya", type: "Melancholic" }
         ]
     },
     {
         question: "30. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "NAIVE - punya perspektif sederhana / polos seperti anak-anak", type: "Sanguine" },
+            { text: "NAIVE - punya perspektif sederhana / polos seperti anak-anak, tidak punya pengalaman / pemahaman tentang kedalaman tingkat kehidupan", type: "Sanguine" },
             { text: "NEGATIVE ATTITUDE - punya sikap yang jarang positif dan sering hanya melihat sisi buruk dari setiap situasi", type: "Melancholic" },
             { text: "NERVY - penuh keyakinan dan keberanian dalam pengertian negatif", type: "Choleric" },
             { text: "NONCHALANT - menganggap remeh, masa bodoh, cuek", type: "Phlegmatic" }
@@ -275,15 +275,15 @@ const quizQuestions = [
         options: [
             { text: "WORRIER - selalu merasa risau, tidak tenteram, resah atau takut", type: "Melancholic" },
             { text: "WITDRAWN - menarik diri -- perlu waktu untuk menyendiri atau mengasingkan diri", type: "Phlegmatic" },
-            { text: "WORKAHOLIC - penentu tujuan secara agresif dan harus selalu produktif", type: "Choleric" },
-            { text: "WANTS CREDIT - berkembang bila ada penghargaan atau persetujuan orang lain", type: "Sanguine" }
+            { text: "WORKAHOLIC - penentu tujuan secara agresif dan harus selalu produktif, merasa bersalah bila istirahat", type: "Choleric" },
+            { text: "WANTS CREDIT - berkembang bila ada penghargaan atau persetujuan orang lain, sebagai penggembira yang dipuaskan oleh tepuk tangan penonton", type: "Sanguine" }
         ]
     },
     {
         question: "32. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
             { text: "TOO SENSITIVE - introspeksi berlebihan terhadap diri dan mudah tersinggung", type: "Melancholic" },
-            { text: "TACTLESS - kurang pertimbangan dalam mengungkapkan diri, terkadang menyakiti hati", type: "Choleric" },
+            { text: "TACTLESS - kurang pertimbangan dalam mengungkapkan diri, terkadang menyakiti hati dan tidak peka terhadap perasaan orang lain", type: "Choleric" },
             { text: "TIMID - menciut, menghindar dari persoalan rumit, takut konflik", type: "Phlegmatic" },
             { text: "TALKACTIVE - pembicara yang memukau / menyenangkan tapi menemui kesulitan untuk mendengarkan", type: "Sanguine" }
         ]
@@ -293,8 +293,8 @@ const quizQuestions = [
         options: [
             { text: "DOUBTFUL - terpengaruh oleh ketidakpastian dan kurang percaya bahwa sesuatu bisa berhasil", type: "Phlegmatic" },
             { text: "DISORGANIZED - tidak punya kemampuan mengatur hidupnya", type: "Sanguine" },
-            { text: "DOMINEERING - dengan paksa mengambil peran menguasai keadaan dan atau orang lain", type: "Choleric" },
-            { text: "DEPRESSED - hampir selalu merasa tertekan", type: "Melancholic" }
+            { text: "DOMINEERING - dengan paksa mengambil peran menguasai keadaan dan atau orang lain dengan memerintahkan apa yang harus dilakukan", type: "Choleric" },
+            { text: "DEPRESSED - hampir selalu merasa tertekan, dapat merasakan aneka perasaan negatif tanpa alasan yang jelas", type: "Melancholic" }
         ]
     },
     {
@@ -309,17 +309,17 @@ const quizQuestions = [
     {
         question: "35. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "MESSY - berantakan, hidup dalam keadaan berantakan", type: "Sanguine" },
-            { text: "MOODY - suasana hati tidak bisa membumbung tinggi tapi mudah merosot sampai tingkat terendah", type: "Melancholic" },
+            { text: "MESSY - berantakan, hidup dalam keadaan berantakan sampai ia tidak dapat menemukan barang-barangnya sendiri", type: "Sanguine" },
+            { text: "MOODY - suasana hati tidak bisa membumbung tinggi tapi mudah merosot sampai tingkat terendah, terutama bila merasa tidak dihargai", type: "Melancholic" },
             { text: "MUMBLES - bicara tidak jelas, tidak berusaha bicara dengan jelas", type: "Phlegmatic" },
-            { text: "MANIPULATIVE - mempengaruhi atau mengusahakan dengan licik agar hal-hal dilakukan demi keuntungannya", type: "Choleric" }
+            { text: "MANIPULATIVE - mempengaruhi atau mengusahakan dengan licik agar hal-hal dilakukan demi keuntungannya dengan menghalalkan segala cara", type: "Choleric" }
         ]
     },
     {
         question: "36. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
             { text: "SLOW - lamban, tidak suka berpikir / bertindak cepat karena itu merepotkan", type: "Phlegmatic" },
-            { text: "STUBBORN - keras kepala -- bertekad memaksakan kehendak", type: "Choleric" },
+            { text: "STUBBORN - keras kepala -- bertekad memaksakan kehendak, tak mudah dibujuk / dipengaruhi", type: "Choleric" },
             { text: "SHOW-OFFS - punya kebutuhan untuk tampil, jadi pusat perhatian, ingin dilihat menonjol", type: "Sanguine" },
             { text: "SKEPTICAL - tidak mudah percaya, mempertanyakan alasan / motivasi dibalik perkataan / tindakan", type: "Melancholic" }
         ]
@@ -374,19 +374,19 @@ const personalityNames = {
 const personalityDescriptions = {
     "Sanguine": {
         title: "Populer Sanguine",
-        description: "Anda adalah pribadi yang ceria, optimis, dan karismatik. Anda suka bersosialisasi dan memiliki energi yang menular. Anda sering menjadi 'pesta itu sendiri' dan mudah beradaptasi dengan lingkungan baru. Kekuatan: Sangat baik dalam berkomunikasi dan membangun hubungan, memiliki rasa humor yang tinggi. Kelemahan: Cenderung impulsif, mudah bosan, dan terkadang tidak terorganisir."
+        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama Mas Ali Mahfud"
     },
     "Choleric": {
         title: "Kuat Choleric",
-        description: "Anda adalah pemimpin yang lahir alami. Anda memiliki tekad yang kuat, suka tantangan, dan tidak takut mengambil risiko. Anda sangat terfokus pada tujuan dan hasil. Kekuatan: Memiliki kemampuan kepemimpinan yang luar biasa, produktif, dan efisien. Kelemahan: Cenderung dominan, mudah tidak sabar, dan sulit menunjukkan emosi atau kehangatan."
+        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama Mas Ali Mahfud"
     },
     "Melancholic": {
         title: "Sempurna Melancholic",
-        description: "Anda adalah pemikir yang mendalam, analitis, dan perfeksionis. Anda sangat menghargai detail, keteraturan, dan ketepatan. Anda memiliki standar yang tinggi untuk diri sendiri dan orang lain. Kekuatan: Sangat terorganisir dan teliti, mampu menemukan masalah yang terlewatkan orang lain. Kelemahan: Cenderung sensitif, bisa terlalu kritis, dan mudah merasa cemas."
+        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama Mas Ali Mahfud"
     },
     "Phlegmatic": {
         title: "Damai Phlegmatic",
-        description: "Anda adalah pribadi yang tenang, sabar, dan santai. Anda suka menjaga harmoni dan menghindari konflik. Anda adalah pendengar yang baik dan sering menjadi penengah dalam grup. Kekuatan: Sangat sabar dan mudah diajak bekerja sama, memiliki kemampuan diplomatik yang baik. Kelemahan: Kurang memiliki dorongan atau motivasi diri, cenderung pasif, dan sulit mengambil keputusan."
+        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama Mas Ali Mahfud"
     }
 };
 
@@ -429,7 +429,7 @@ function showQuestion() {
         const currentQuestion = quizQuestions[currentQuestionIndex];
         questionText.textContent = `(${currentQuestionIndex + 1}/40) ${currentQuestion.question}`;
         optionsContainer.innerHTML = '';
-        currentQuestion.options.forEach((option, index) => {
+        currentQuestion.options.forEach((option) => {
             const button = document.createElement('button');
             button.textContent = option.text;
             button.classList.add('option-button');
@@ -458,7 +458,8 @@ function selectAnswer(type) {
     const buttons = optionsContainer.querySelectorAll('.option-button');
     buttons.forEach(btn => btn.classList.remove('selected'));
     
-    const selectedButton = Array.from(buttons).find(btn => btn.textContent.includes(type));
+    // Perbaikan: Mencari tombol berdasarkan teks yang mengandung jenis kepribadian
+    const selectedButton = Array.from(buttons).find(btn => quizQuestions[currentQuestionIndex].options.find(opt => opt.type === type).text.includes(btn.textContent));
     if (selectedButton) {
         selectedButton.classList.add('selected');
     }
@@ -484,7 +485,7 @@ function calculateAndShowResult() {
     resultContainer.classList.remove('hidden');
     const result = personalityDescriptions[dominantType];
     resultTitle.textContent = result.title;
-    resultDescription.textContent = result.description;
+    resultDescription.textContent = "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama Mas Ali Mahfud";
 }
 
 function restartQuiz() {
