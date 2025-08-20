@@ -1,384 +1,392 @@
 // Data Pertanyaan (Sesuai dengan file Anda)
 const quizQuestions = [
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "1. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku tegas dan suka memimpin", type: "Koleris" },
-            { text: "Aku ceria dan mudah berteman", type: "Sanguinis" },
-            { text: "Aku santai dan mudah setuju", type: "Plegmatis" },
-            { text: "Aku rapi dan suka ketelitian", type: "Melankolis" }
+            { text: "ADVENTUROUS - orang yang suka tantangan, hal-hal baru, hal-hal yang memerlukan keberanian dan tekad untuk menguasainya", type: "Choleric" },
+            { text: "ADAPTABLE - mudah menyesuaikan diri dan merasa nyaman dalam setiap situasi", type: "Phlegmatic" },
+            { text: "ANIMATED - penuh gairah hidup dan suka mengkomunikasikan pikiran dan perasaannya dengan gerakan tangan, lengan dan mimik wajah", type: "Sanguine" },
+            { text: "ANALYTICAL - suka meneliti / menganalisis bagian-bagian dari apa saja untuk meyakinkan diri apakah hubungan antara satu hal dengan lainnya itu logis dan patut", type: "Melancholic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "2. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka tantangan dan target", type: "Koleris" },
-            { text: "Aku senang jadi pusat perhatian", type: "Sanguinis" },
-            { text: "Aku suka suasana damai dan tanpa konflik", type: "Plegmatis" },
-            { text: "Aku suka menganalisis dan memperhatikan detail", type: "Melankolis" }
+            { text: "PERSISTENT - menyelesaikan pekerjaan / proyeknya sampai tuntas, sebelum memulai hal baru", type: "Melancholic" },
+            { text: "PLAYFUL - ceria, suka bercanda", type: "Sanguine" },
+            { text: "PERSUASIVE - meyakinkan, lebih memakai logika dan fakta daripada dengan memakai daya tarik pribadi atau kuasanya", type: "Choleric" },
+            { text: "PEACEFUL - suasana hati damai dan tidak terpengaruh kejadian disekitarnya, bahkan menghindar dari tantangan", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "3. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku bisa mengambil keputusan cepat", type: "Koleris" },
-            { text: "Aku mudah bergaul dan suka humor", type: "Sanguinis" },
-            { text: "Aku sabar dan tidak suka terburu-buru", type: "Plegmatis" },
-            { text: "Aku suka bekerja sendiri dan terorganisir", type: "Melankolis" }
+            { text: "SUBMISSIVE - mudah menerima pandangan atau keinginan orang lain dan hampir tidak mempunyai keinginan untuk menyatakan pendapatnya sendiri", type: "Phlegmatic" },
+            { text: "SELF SACRIFICING - bersedia (tanpa pamrih) mengorbankan kepentingan diri demi kebutuhan orang lain", type: "Melancholic" },
+            { text: "SOCIABLE - lebih melihat kebersamaan dengan orang lain sebagai kesempatan untuk tampil cerdas, menarik dan menyenangkan daripada sebagai kesempatan untuk mendapatkan tantangan baru", type: "Sanguine" },
+            { text: "STRONG-WILLED - berkemauan keras, bertekad untuk mencapai apa yang dikehendaki", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "4. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka memimpin kelompok", type: "Koleris" },
-            { text: "Aku spontan dan suka petualangan", type: "Sanguinis" },
-            { text: "Aku pendengar yang baik dan tidak suka ribut", type: "Plegmatis" },
-            { text: "Aku perfeksionis dan ingin semuanya tepat", type: "Melankolis" }
+            { text: "CONSIDERATE - mempunyai perhatian dan tanggap terhadap kebutuhan dan perasaan orang lain", type: "Phlegmatic" },
+            { text: "CONTROLLED - mempunyai emosi-emosi tetapi dapat mengendalikannya, jarang memperlihatkan emosinya", type: "Melancholic" },
+            { text: "COMPETITIVE - menganggap setiap situasi / kejadian sebagai suatu kontes/ lomba dan selalu ingin memenangkannya", type: "Choleric" },
+            { text: "CONVINCING - meyakinkan orang lain melalui daya tarik / kharisma kepribadiannya", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "5. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku bisa mengarahkan orang lain", type: "Koleris" },
-            { text: "Aku penuh semangat dan mudah antusias", type: "Sanguinis" },
-            { text: "Aku setia dan bisa diandalkan", type: "Plegmatis" },
-            { text: "Aku sering menganalisis sebelum bertindak", type: "Melankolis" }
+            { text: "REFRESHING - menyegarkan dan merangsang orang-orang lain untuk merasa senang", type: "Sanguine" },
+            { text: "RESPECTFUL - memperlakukan orang lain dengan sopan, hormat dan penghargaan", type: "Phlegmatic" },
+            { text: "RESERVED - mengendalikan / menahan diri dalam mengekspresikan gairahnya", type: "Melancholic" },
+            { text: "RESOURCEFUL - dapat bertindak cepat dan efektif dalam hampir setiap keadaan", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "6. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku cepat bertindak dan tidak suka menunda", type: "Koleris" },
-            { text: "Aku mudah akrab dengan siapa saja", type: "Sanguinis" },
-            { text: "Aku lebih suka mendengarkan daripada bicara", type: "Plegmatis" },
-            { text: "Aku lebih suka bekerja tenang tanpa gangguan", type: "Melankolis" }
+            { text: "SATISFIED - mudah menerima keadaan atau situasi apapun, mudah puas", type: "Phlegmatic" },
+            { text: "SENSITIVE - mempunyai kepedulian mendalam terhadap orang lain dan kejadian", type: "Melancholic" },
+            { text: "SELF-RELIANT - mandiri, tidak tergantung, mengandalkan kemampuan, pendapat dan akal budi sendiri secara total", type: "Choleric" },
+            { text: "SPIRITED - penuh gairah dan kegembiraan yang menggelora", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "7. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka menyelesaikan masalah dengan tegas", type: "Koleris" },
-            { text: "Aku sering jadi pusat perhatian karena cerita lucu", type: "Sanguinis" },
-            { text: "Aku tidak suka konflik dan lebih memilih diam", type: "Plegmatis" },
-            { text: "Aku tidak tenang jika sesuatu tidak sesuai rencana", type: "Melankolis" }
+            { text: "PLANNER - lebih memilih / suka membuat rencana terperinci untuk keberhasilan suatu proyek atau tujuan", type: "Melancholic" },
+            { text: "PATIENT - sabar, tak terpengaruh akan penundaan, perubahaan, tetap tenang dan toleran menerima keadaan", type: "Phlegmatic" },
+            { text: "POSITIVE - positif, yakin pada diri sendiri bahwa segala akan beres bila dirinya yang melakukan", type: "Choleric" },
+            { text: "PROMOTER - mendorong / memaksa orang lain untuk ikut bergabung atau mencurahkan diri melalui daya tarik kepribadiannya", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "8. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku sering memimpin dan memberi arahan", type: "Koleris" },
-            { text: "Aku impulsif dan suka berbicara spontan", type: "Sanguinis" },
-            { text: "Aku cenderung menghindar dari keramaian", type: "Plegmatis" },
-            { text: "Aku selalu memeriksa ulang semua pekerjaan", type: "Melankolis" }
+            { text: "SURE - yakin, hampir tidak pernah ragu / goyah", type: "Choleric" },
+            { text: "SPONTANEOUS - spontan -- lebih menyukai hidup yang impulsif", type: "Sanguine" },
+            { text: "SCHEDULED - membuat segala sesuatu dan hidup sesuai rencana harian dan tidak suka adanya interupsi dalam rencananya", type: "Melancholic" },
+            { text: "SHY - pendiam / pemalu, tidak mudah larut dalam percakapan", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "9. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka memberi arahan kepada orang lain", type: "Koleris" },
-            { text: "Aku mudah tertawa dan suka membuat suasana jadi seru", type: "Sanguinis" },
-            { text: "Aku sering diminta jadi penengah saat ada masalah", type: "Plegmatis" },
-            { text: "Aku cenderung memikirkan banyak hal sebelum bertindak", type: "Melankolis" }
+            { text: "ORDERLY - mengatur segalanya secara metodis dan sistematis", type: "Melancholic" },
+            { text: "OBLIGING - mudah menampung, menerima apa saja, mudah melakukan hal-hal atas saran orang lain", type: "Phlegmatic" },
+            { text: "OUTSPOKEN - berbicara terus terang tanpa tedeng aling-aling", type: "Choleric" },
+            { text: "OPTIMISTIC - ceria, meyakinkan diri sendiri dan orang lain bahwa semua akan beres", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "10. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku senang menyelesaikan banyak hal dalam waktu singkat", type: "Koleris" },
-            { text: "Aku sering menceritakan kisah yang lucu", type: "Sanguinis" },
-            { text: "Aku sabar dan jarang menuntut orang lain", type: "Plegmatis" },
-            { text: "Aku perfeksionis dan detail kecil pun sangat penting bagiku", type: "Melankolis" }
+            { text: "FRIENDLY - ramah, lebih suka menanggapi daripada memulai percakapan", type: "Phlegmatic" },
+            { text: "FAITHFUL - dapat diandalkan secara konsisten, teguh, loyal (setia) dan kadang pengabdiannya tanpa alasan", type: "Melancholic" },
+            { text: "FUNNY - rasa humornya bagai percikan kembang api yang membuat cerita apa saja jadi peristiwa penuh kegembiraan / tawa", type: "Sanguine" },
+            { text: "FORCEFUL - kepribadian yang berwibawa / kuat, yang menyebabkan orang lain ragu untuk melawan", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "11. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku berani ambil keputusan meski belum semua data lengkap", type: "Koleris" },
-            { text: "Aku sering bicara sebelum berpikir", type: "Sanguinis" },
-            { text: "Aku menghindari konflik agar semua tetap nyaman", type: "Plegmatis" },
-            { text: "Aku butuh waktu tenang sebelum memutuskan sesuatu", type: "Melankolis" }
+            { text: "DARING - bersedia mengambil resiko, berani dan tidak punya rasa takut", type: "Choleric" },
+            { text: "DELIGHTFUL - membuat orang senang berada bersamanya, menyenangkan sebagai teman", type: "Sanguine" },
+            { text: "DIPLOMATIC - bila berhubungan dengan orang, dia diplomatis (berusaha tidak menyinggung / menyerang), peka dan sabar", type: "Phlegmatic" },
+            { text: "DETAILED - terperinci -- melakukan segala sesuatu menurut urutan dan kronologis (mengingat kejadian secara berurutan)", type: "Melancholic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "12. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka jadi pengambil keputusan utama", type: "Koleris" },
-            { text: "Aku bisa membuat orang tertawa bahkan saat situasi tegang", type: "Sanguinis" },
-            { text: "Aku sering mengalah untuk menjaga keharmonisan", type: "Plegmatis" },
-            { text: "Aku lebih nyaman bekerja sendiri daripada dalam kelompok besar", type: "Melankolis" }
+            { text: "CHEERFUL - selalu bersemangat, riang dan membuat orang lain berbahagia", type: "Sanguine" },
+            { text: "CONSISTENT - memiliki keseimbangan emosional, dapat memberi tanggapan sesuai harapan orang", type: "Phlegmatic" },
+            { text: "CULTURED - mempunyai minat yang melibatkan hal-hal yang berbudaya, intelek / berkelas seperti theater, simphony, ballet", type: "Melancholic" },
+            { text: "CONFIDENT - percaya diri, yakin akan kemampuan diri", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "13. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku ingin hasil cepat dan tidak suka basa-basi", type: "Koleris" },
-            { text: "Aku sering cerita panjang meski belum tentu penting", type: "Sanguinis" },
-            { text: "Aku lebih suka jadi pendukung daripada pemimpin", type: "Plegmatis" },
-            { text: "Aku suka merapikan hal kecil seperti meja kerja dan catatan", type: "Melankolis" }
+            { text: "IDEALISTIC - menggambarkan semuanya dalam kesempatan dan punya kebutuhan untuk mencapai tingkat kesempurnaan", type: "Melancholic" },
+            { text: "INDEPENDENT - mandiri, berdikari, percaya diri dan tampak tidak begitu butuh bantuan orang lain", type: "Choleric" },
+            { text: "INOFFENSIVE - tak pernah mengatakan dan menyebabkan hal-hal yang tidak menyenangkan atau menimbulkan pertengkaran", type: "Phlegmatic" },
+            { text: "INSPIRING - memberi inspirasi kepada orang-orang untuk bekerja, bergabung / terlibat dan membuat keseluruhannya menyenangkan", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "14. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka menetapkan target yang tinggi", type: "Koleris" },
-            { text: "Aku sering dianggap ramai dan terlalu ekspresif", type: "Sanguinis" },
-            { text: "Aku bisa menunggu dengan sabar tanpa banyak komentar", type: "Plegmatis" },
-            { text: "Aku punya standar tinggi dan ingin semuanya sempurna", type: "Melankolis" }
+            { text: "DEMONTRATIVE - mengungkapkan diri secara terbuka, terutama mengenai perasaan sayang", type: "Sanguine" },
+            { text: "DECISIVE - punya kemampuan untuk membuat penilaian. Keputusan dan kesimpulan dengan cepat dan tuntas", type: "Choleric" },
+            { text: "DRY HUMOR - punya rasa humor kering -- kemampuan memunculkan kalimat-kalimat singkat menggigit dan biasa bersifat sarkastis", type: "Melancholic" },
+            { text: "DEEP - mendalam dan introspektif dalam cara berpikir, tidak suka hal-hal yang dangkal", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "15. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku tidak keberatan memimpin tim", type: "Koleris" },
-            { text: "Aku merasa bahagia saat dikelilingi banyak teman", type: "Sanguinis" },
-            { text: "Aku menghindari konfrontasi langsung", type: "Plegmatis" },
-            { text: "Aku mencatat semua rencana dalam daftar harian", type: "Melankolis" }
+            { text: "MEDIATOR - selalu berada di posisi penengah, membantu orang-orang yang bertikai agar konflik bisa dihindari / diselesaikan", type: "Phlegmatic" },
+            { text: "MUSICAL - punya penghargaan tinggi terhadap musik, punya komitmen terhadap musik, menganggap musik sebagai bentuk seni", type: "Melancholic" },
+            { text: "MOVER - terdorong oleh kebutuhan untuk menjadi orang yang produktif, sebagai pemimpin yang diikuti orang-orang, tidak bisa santai / diam", type: "Choleric" },
+            { text: "MIXES EASILY - suka pesta, tidak sabar untuk bertemu dengan semua hadirin dan tidak pernah menganggap orang lain sebagai orang asing", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "16. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku senang saat bisa menyelesaikan banyak hal sekaligus", type: "Koleris" },
-            { text: "Aku bisa ngobrol dengan siapa pun tanpa canggung", type: "Sanguinis" },
-            { text: "Aku tidak suka terburu-buru", type: "Plegmatis" },
-            { text: "Aku sering menyimpan perasaan sendiri tanpa berbagi", type: "Melankolis" }
+            { text: "THOUGHTFUL - penuh perhatian, tenggang rasa, ingat kejadian-kejadian istimewa", type: "Melancholic" },
+            { text: "TENACIOUS - memegang teguh, dengan keras kepala dan tak mau menyerah, sebelum tujuan tercapai", type: "Choleric" },
+            { text: "TALKER - tak henti bicara, biasanya bercerita tentang hal-hal lucu dan menghibur", type: "Sanguine" },
+            { text: "TOLERANT - mudah menerima jalan pikiran dan cara orang lain tanpa ada keinginan untuk tidak setuju atau mengubahnya", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "17. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku ingin mengontrol hasil akhir sesuai caraku", type: "Koleris" },
-            { text: "Aku senang menjadi pusat perhatian di acara kumpul", type: "Sanguinis" },
-            { text: "Aku lebih senang jika orang lain yang mengambil keputusan", type: "Plegmatis" },
-            { text: "Aku menganalisis semua hal sebelum bertindak", type: "Melankolis" }
+            { text: "LISTENER - selalu bersedia mendengarkan apa yang dikatakan orang lain", type: "Phlegmatic" },
+            { text: "LOYAL - setia kepada orang, gagasan atau pekerjaan, kadang melampaui pemikiran wajar", type: "Melancholic" },
+            { text: "LEADER - pemimpin alami yang punya dorongan memimpin / bertanggung jawab", type: "Choleric" },
+            { text: "LIVELY - penuh gairah hidup, semangat dan cekatan", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "18. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku tidak takut berdebat untuk mempertahankan pendapat", type: "Koleris" },
-            { text: "Aku sering bicara tanpa sadar mendominasi pembicaraan", type: "Sanguinis" },
-            { text: "Aku bisa menjadi jembatan dalam tim yang bertengkar", type: "Plegmatis" },
-            { text: "Aku mudah khawatir jika sesuatu tidak sempurna", type: "Melankolis" }
+            { text: "CONTENTED - mudah puas dengan apa yang dimiliki -- jarang iri hati", type: "Phlegmatic" },
+            { text: "CHIEF - memegang tampuk pimpinan dan mengharapkan orang mengikutinya", type: "Choleric" },
+            { text: "CHARTMAKER - mengatur kehidupan, tugas dan penyelesaian masalah dengan membuat daftar, formulir, atau grafik", type: "Melancholic" },
+            { text: "CUTE - bermutu, cerdik / cerdas, menarik, jadi pusat perhatian", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "19. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka mengejar prestasi", type: "Koleris" },
-            { text: "Aku sering jadi sumber cerita lucu", type: "Sanguinis" },
-            { text: "Aku menghindari drama dan tetap tenang", type: "Plegmatis" },
-            { text: "Aku memperhatikan detail kecil yang dilewatkan orang lain", type: "Melankolis" }
+            { text: "PERFECTIONIST - memberi standar tinggi pada diri sendiri dan seringkali pada orang lain juga, menginginkan semuanya pada urutan semestinya", type: "Melancholic" },
+            { text: "PLEASANT - mudah dan menyenangkan untuk diajak bicara / bergaul", type: "Phlegmatic" },
+            { text: "PRODUCTIVE - harus selalu bekerja mencapai sesuatu, sering merasa sulit istirahat", type: "Choleric" },
+            { text: "POPULAR - sumber hidup yang membuat sebuah pesta jadi menyenangkan", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "20. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku fokus pada solusi dan hasil", type: "Koleris" },
-            { text: "Aku senang membuat orang terhibur", type: "Sanguinis" },
-            { text: "Aku lebih nyaman bekerja di balik layar", type: "Plegmatis" },
-            { text: "Aku mudah merasa bersalah kalau hasil tidak sesuai harapan", type: "Melankolis" }
+            { text: "BOUNCY - kepribadian yang ibarat bola sangat tidak bisa diam, melambung dan memantul dengan semangat besar", type: "Sanguine" },
+            { text: "BOLD - tidak kenal takut, tak gentar, berani menanggung segala resiko", type: "Choleric" },
+            { text: "BEHAVED - selalu (secara konsisten) membawa diri baik-baik dalam batas-batas yang dapat diterima kebanyakan orang", type: "Melancholic" },
+            { text: "BALANCED - stabil ibarat berada di tengah-tengah timbangan, kepribadian yang tidak terbawa tinggi rendahnya gelombang kehidupan", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "21. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka membetulkan orang yang menurutku salah", type: "Koleris" },
-            { text: "Aku lebih suka cerita daripada mendengarkan", type: "Sanguinis" },
-            { text: "Aku sulit bilang 'tidak' meskipun tidak setuju", type: "Plegmatis" },
-            { text: "Aku membuat daftar belanja bahkan untuk hal kecil", type: "Melankolis" }
+            { text: "BLANK - orang yang sangat jarang menunjukkan ekspresi wajah atau emosi", type: "Phlegmatic" },
+            { text: "BASHFUL - menghindar dari perhatian orang karena merasa malu", type: "Melancholic" },
+            { text: "BRASSY - suka pamer, gemerlapan, menyatakan diri dengan kuat, menarik perhatian, suara keras", type: "Sanguine" },
+            { text: "BOSSY - sering memerintah, mendominasi, kadang secara keterlaluan dalam relasi antar orang dewasa", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "22. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku merasa lebih unggul saat memberi perintah", type: "Koleris" },
-            { text: "Aku suka berkumpul tanpa tujuan jelas", type: "Sanguinis" },
-            { text: "Aku lebih nyaman jadi pengikut", type: "Plegmatis" },
-            { text: "Aku menyukai keheningan dan keteraturan", type: "Melankolis" }
+            { text: "UNDISCIPLINED - bersifat kurang disiplin / teratur sehingga hal tersebut mempengaruhi hampir semua aspek hidupnya", type: "Sanguine" },
+            { text: "UNSYMPATHETIC - kurang peka dan sulit mengenali problem atau perasaan terlukanya orang lain", type: "Choleric" },
+            { text: "UNENTHUSIASTIC - cenderung tidak bergairah, sering merasa hal itu bagaimanapun tidak akan membuahkan hasil", type: "Phlegmatic" },
+            { text: "UNFORGIVING - punya kesulitan untuk mengampuni atau melupakan suatu luka batin", type: "Melancholic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "23. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku lebih fokus pada tugas daripada emosi", type: "Koleris" },
-            { text: "Aku mudah berubah arah saat melihat hal menarik", type: "Sanguinis" },
-            { text: "Aku tidak masalah jika harus menunggu", type: "Plegmatis" },
-            { text: "Aku menyusun rencana bahkan untuk liburan", type: "Melankolis" }
+            { text: "RETICENT - tidak ingin terlibat terutama bila itu menyangkut hal yang rumit / sulit", type: "Phlegmatic" },
+            { text: "RESENTFUL - sering memendam perasaan negatif", type: "Melancholic" },
+            { text: "RESISTANT - berjuang melawan cara lain selain caranya sendiri", type: "Choleric" },
+            { text: "REPETITIOUS - menceritakan kembali kisah / kejadian untuk menghibur orang", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "24. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku mengatur orang lain agar bekerja sesuai keinginanku", type: "Koleris" },
-            { text: "Aku bicara dengan ekspresi dan tangan ikut bergerak", type: "Sanguinis" },
-            { text: "Aku pendengar yang baik dan tidak banyak bicara", type: "Plegmatis" },
-            { text: "Aku sering merasa cemas jika tidak ada struktur jelas", type: "Melankolis" }
+            { text: "FUSSY - bersikeras mengenai hal yang tidak penting dan menuntut perhatian besar untuk hal detil yang tidak berarti", type: "Melancholic" },
+            { text: "FEARFUL - merasa tidak aman / kurang percaya diri", type: "Phlegmatic" },
+            { text: "FORGETFUL - punya daya ingat yang lemah, biasanya dikarenakan kurang disiplin dan cuek", type: "Sanguine" },
+            { text: "FRANK - terus terang, tidak segan mengatakan apa yang dipikir atau dirasa", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "25. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku cepat bosan dengan rutinitas", type: "Koleris" },
-            { text: "Aku merasa harus membuat semua senang", type: "Sanguinis" },
-            { text: "Aku menyukai kestabilan dan ketenangan", type: "Plegmatis" },
-            { text: "Aku merasa lelah jika terlalu banyak interaksi sosial", type: "Melankolis" }
+            { text: "IMPATIENT - tidak sabaran, susah menanggung kekesalan atau menunggu", type: "Choleric" },
+            { text: "INSECURE - merasa tidak aman / kurang percaya diri", type: "Melancholic" },
+            { text: "INDECISIVE - sulit membuat keputusan", type: "Phlegmatic" },
+            { text: "INTERRUPTS - lebih suka bicara daripada mendengarkan, suka menyela pembicaraan orang", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "26. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku memotivasi orang lain untuk berprestasi", type: "Koleris" },
-            { text: "Aku punya energi tinggi dan susah diam", type: "Sanguinis" },
-            { text: "Aku bisa bekerja baik meski tidak diberi perhatian", type: "Plegmatis" },
-            { text: "Aku sangat peduli pada aturan dan prosedur", type: "Melankolis" }
+            { text: "UNPOPULAR - orang yang kesungguhan dan tuntutannya akan kesempurnaan, dapat membuatnya dijauhi orang", type: "Melancholic" },
+            { text: "UNINVOLVED - tidak mau terlibat, tidak punya keinginan mendengar tentang atau menjadi tertarik pada keterlibatan dalam organisasi atau hidup orang lain", type: "Phlegmatic" },
+            { text: "UNPREDICTABLE - tidak bisa diduga / diandalkan. Sesaat bisa bergairah, saat lain tiba-tiba sedih", type: "Sanguine" },
+            { text: "UNAFFECTIONATE - sulit menyatakan kasih sayang secara terbuka, baik fisik ataupun lisan", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "27. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku mudah jengkel jika orang lain lambat", type: "Koleris" },
-            { text: "Aku suka acara yang ramai dan penuh warna", type: "Sanguinis" },
-            { text: "Aku tidak suka jika disuruh pilih pihak", type: "Plegmatis" },
-            { text: "Aku merenung sebelum memutuskan sesuatu penting", type: "Melankolis" }
+            { text: "HEADSTRONG - bersikeras mencapai sesuatu dengan caranya sendiri", type: "Choleric" },
+            { text: "HAPHAZARD - tidak punya cara yang konsisten untuk melakukan banyak hal", type: "Sanguine" },
+            { text: "HARD TO PLEASE - sulit disenangkan -- punya standar tinggi sekali sehingga membuat orang lain sulit memuaskannya", type: "Melancholic" },
+            { text: "HESITANT - sulit bergairah dan sulit terlibat", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "28. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku terdorong untuk menjadi yang terbaik", type: "Koleris" },
-            { text: "Aku lebih suka obrolan ringan daripada diskusi serius", type: "Sanguinis" },
-            { text: "Aku jarang menunjukkan perasaan secara langsung", type: "Plegmatis" },
-            { text: "Aku senang mengecek ulang pekerjaan orang lain", type: "Melankolis" }
+            { text: "PLAIN - tidak menonjol sama sekali, biasa saja dan hampir tidak menunjukkan emosi", type: "Phlegmatic" },
+            { text: "PESSIMISTIC - pesimis, sementara mengharapkan yang terbaik, biasanya lebih dulu melihat sisi buruk dari sebuah situasi", type: "Melancholic" },
+            { text: "PROUD - punya harga diri tinggi, melihat dirinya sebagai selalu benar", type: "Choleric" },
+            { text: "PERMISSIVE - membiarkan orang lain melakukan apa yang disukainya agar ia dapat diterima", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "29. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku punya prinsip kuat dan sulit digoyahkan", type: "Koleris" },
-            { text: "Aku kadang berbicara tanpa menyadari efeknya", type: "Sanguinis" },
-            { text: "Aku menyukai hubungan yang tenang dan tidak menuntut", type: "Plegmatis" },
-            { text: "Aku suka mencatat hal-hal kecil yang kupikirkan", type: "Melankolis" }
+            { text: "ANGERED EASILY - mudah marah, punya perangai seperti anak-anak yang suka ngambek atau marah meledak-ledak", type: "Sanguine" },
+            { text: "AIMLESS - tidak punya tujuan / inisiatif", type: "Phlegmatic" },
+            { text: "ARGUMENTATIVE - merangsang argumen/ perdebatan karena merasa dirinya benar", type: "Choleric" },
+            { text: "ALIENATED - merasa terkucilkan dari orang lain, seringkali karena merasa tidak aman atau takut orang tidak menyukainya", type: "Melancholic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "30. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku ingin hasil akhir yang cepat dan sesuai target", type: "Koleris" },
-            { text: "Aku suka kejutan dan perubahan suasana", type: "Sanguinis" },
-            { text: "Aku sering mengikuti saja tanpa protes", type: "Plegmatis" },
-            { text: "Aku menilai sesuatu dari data dan logika", type: "Melankolis" }
+            { text: "NAIVE - punya perspektif sederhana / polos seperti anak-anak", type: "Sanguine" },
+            { text: "NEGATIVE ATTITUDE - punya sikap yang jarang positif dan sering hanya melihat sisi buruk dari setiap situasi", type: "Melancholic" },
+            { text: "NERVY - penuh keyakinan dan keberanian dalam pengertian negatif", type: "Choleric" },
+            { text: "NONCHALANT - menganggap remeh, masa bodoh, cuek", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "31. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku suka membuat keputusan tanpa harus didiskusikan", type: "Koleris" },
-            { text: "Aku suka menciptakan suasana menyenangkan di mana pun", type: "Sanguinis" },
-            { text: "Aku tidak suka perdebatan panjang", type: "Plegmatis" },
-            { text: "Aku menyimpan catatan untuk hampir semua hal", type: "Melankolis" }
+            { text: "WORRIER - selalu merasa risau, tidak tenteram, resah atau takut", type: "Melancholic" },
+            { text: "WITDRAWN - menarik diri -- perlu waktu untuk menyendiri atau mengasingkan diri", type: "Phlegmatic" },
+            { text: "WORKAHOLIC - penentu tujuan secara agresif dan harus selalu produktif", type: "Choleric" },
+            { text: "WANTS CREDIT - berkembang bila ada penghargaan atau persetujuan orang lain", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "32. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku senang menyusun strategi besar", type: "Koleris" },
-            { text: "Aku menyukai cerita dan pengalaman baru", type: "Sanguinis" },
-            { text: "Aku cenderung pasif tapi setia", type: "Plegmatis" },
-            { text: "Aku lebih percaya pada perencanaan daripada spontanitas", type: "Melankolis" }
+            { text: "TOO SENSITIVE - introspeksi berlebihan terhadap diri dan mudah tersinggung", type: "Melancholic" },
+            { text: "TACTLESS - kurang pertimbangan dalam mengungkapkan diri, terkadang menyakiti hati", type: "Choleric" },
+            { text: "TIMID - menciut, menghindar dari persoalan rumit, takut konflik", type: "Phlegmatic" },
+            { text: "TALKACTIVE - pembicara yang memukau / menyenangkan tapi menemui kesulitan untuk mendengarkan", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "33. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku ingin dihargai karena hasil kerjaku", type: "Koleris" },
-            { text: "Aku suka berbagi cerita tentang diriku", type: "Sanguinis" },
-            { text: "Aku menghindari tekanan sebisa mungkin", type: "Plegmatis" },
-            { text: "Aku lebih suka diam daripada dikritik", type: "Melankolis" }
+            { text: "DOUBTFUL - terpengaruh oleh ketidakpastian dan kurang percaya bahwa sesuatu bisa berhasil", type: "Phlegmatic" },
+            { text: "DISORGANIZED - tidak punya kemampuan mengatur hidupnya", type: "Sanguine" },
+            { text: "DOMINEERING - dengan paksa mengambil peran menguasai keadaan dan atau orang lain", type: "Choleric" },
+            { text: "DEPRESSED - hampir selalu merasa tertekan", type: "Melancholic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "34. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku sering merasa harus menang", type: "Koleris" },
-            { text: "Aku mudah bosan dan mencari hiburan", type: "Sanguinis" },
-            { text: "Aku selalu menjaga keharmonisan", type: "Plegmatis" },
-            { text: "Aku merasa terganggu jika jadwal berubah tiba-tiba", type: "Melankolis" }
+            { text: "INCONSISTENT - bersikap tidak tentu, berlawanan dengan tindakan, emosi tidak logis", type: "Sanguine" },
+            { text: "INTROVERT - tertutup, pemikiran dan perhatian tertuju ke dalam dirinya sendiri", type: "Melancholic" },
+            { text: "INTOLERANT - tidak dapat menerima sikap atau sudut pandang orang lain", type: "Choleric" },
+            { text: "INDIFFERENT - menganggap kebanyakan hal tidak penting", type: "Phlegmatic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "35. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku bisa mengatur tim untuk mencapai tujuan", type: "Koleris" },
-            { text: "Aku bisa mencairkan suasana dalam kelompok baru", type: "Sanguinis" },
-            { text: "Aku sering merasa netral dalam konflik", type: "Plegmatis" },
-            { text: "Aku membaca petunjuk dengan sangat teliti", type: "Melankolis" }
+            { text: "MESSY - berantakan, hidup dalam keadaan berantakan", type: "Sanguine" },
+            { text: "MOODY - suasana hati tidak bisa membumbung tinggi tapi mudah merosot sampai tingkat terendah", type: "Melancholic" },
+            { text: "MUMBLES - bicara tidak jelas, tidak berusaha bicara dengan jelas", type: "Phlegmatic" },
+            { text: "MANIPULATIVE - mempengaruhi atau mengusahakan dengan licik agar hal-hal dilakukan demi keuntungannya", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "36. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku berani konfrontasi jika diperlukan", type: "Koleris" },
-            { text: "Aku sering melucu tanpa sadar", type: "Sanguinis" },
-            { text: "Aku suka dengerin curhatan orang lain", type: "Plegmatis" },
-            { text: "Aku merasa harus sempurna agar diterima", type: "Melankolis" }
+            { text: "SLOW - lamban, tidak suka berpikir / bertindak cepat karena itu merepotkan", type: "Phlegmatic" },
+            { text: "STUBBORN - keras kepala -- bertekad memaksakan kehendak", type: "Choleric" },
+            { text: "SHOW-OFFS - punya kebutuhan untuk tampil, jadi pusat perhatian, ingin dilihat menonjol", type: "Sanguine" },
+            { text: "SKEPTICAL - tidak mudah percaya, mempertanyakan alasan / motivasi dibalik perkataan / tindakan", type: "Melancholic" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "37. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku percaya pada hasil nyata, bukan hanya niat", type: "Koleris" },
-            { text: "Aku suka jadi bagian dari pesta atau pertemuan", type: "Sanguinis" },
-            { text: "Aku menghindari konflik dengan mengalah", type: "Plegmatis" },
-            { text: "Aku terlalu kritis pada diri sendiri", type: "Melankolis" }
+            { text: "LONER - butuh banyak waktu untuk sendiri, cenderung menghindar dari orang lain", type: "Melancholic" },
+            { text: "LORD OVER - tidak ragu menyatakan bahwa dirinya benar dan berkuasa", type: "Choleric" },
+            { text: "LAZY - menilai pekerjaan dari berapa banyak energi yang diperlukan", type: "Phlegmatic" },
+            { text: "LOUD - keras suara dan tawanya melebihi suara dan tawa orang lain di tempat yang sama", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "38. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku terdorong oleh pencapaian", type: "Koleris" },
-            { text: "Aku menikmati jadi pusat perhatian", type: "Sanguinis" },
-            { text: "Aku lebih suka kerjasama daripada kompetisi", type: "Plegmatis" },
-            { text: "Aku sering membuat catatan rapi untuk setiap proyek", type: "Melankolis" }
+            { text: "SLUGGISH - ibarat siput, lamban dan perlu dorongan agar bergerak / termotivasi", type: "Phlegmatic" },
+            { text: "SUSPICIOUS - cenderung mencurigai, tidak percaya ide dan atau orang lain", type: "Melancholic" },
+            { text: "SHORT TEMPERED - mudah marah karena tidak sabar", type: "Choleric" },
+            { text: "SCATTERBRAINED - tidak punya kemampuan untuk konsentrasi atau suka berubah- ubah", type: "Sanguine" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "39. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku fokus menyelesaikan tugas daripada ngobrol", type: "Koleris" },
-            { text: "Aku mudah teralihkan oleh hal menarik", type: "Sanguinis" },
-            { text: "Aku sabar dan tidak menuntut banyak", type: "Plegmatis" },
-            { text: "Aku suka menganalisis hal yang orang lain anggap remeh", type: "Melankolis" }
+            { text: "REVENGEFUL - secara sadar atau tidak, menyimpan dendam dan menghukum orang yang menyakitinya", type: "Melancholic" },
+            { text: "RESTLESS - selalu menyukai aktivitas baru sebab bosan melakukan hal yang sama terus", type: "Sanguine" },
+            { text: "RELUCTANT - tidak suka bila diharuskan terlibat", type: "Phlegmatic" },
+            { text: "RASH - bertindak tergesa-gesa tanpa pikir panjang / matang", type: "Choleric" }
         ]
     },
     {
-        question: "Dari empat pernyataan berikut, pilih SATU yang PALING menggambarkan dirimu:",
+        question: "40. Dari empat pernyataan berikut, pilih SATU yang PALING mewakili diri Anda:",
         options: [
-            { text: "Aku memberi semangat tim untuk terus bergerak", type: "Koleris" },
-            { text: "Aku dikenal karena gaya bicara yang seru", type: "Sanguinis" },
-            { text: "Aku lebih suka mengikuti daripada memimpin", type: "Plegmatis" },
-            { text: "Aku menilai sesuatu berdasarkan fakta, bukan perasaan", type: "Melankolis" }
+            { text: "COMPROMISING - mudah kompromi, mengendurkan pendirian walau ia dalam posisi benar guna menghindari konflik", type: "Phlegmatic" },
+            { text: "CRITICAL - selalu mengevaluasi dan menilai, sering dengan pikiran atau ungkapan negatif", type: "Melancholic" },
+            { text: "CRAFTY - selalu menemukan jalan untuk mencapai keinginannya dengan menghalalkan segala cara", type: "Choleric" },
+            { text: "CHANGEABLE - hanya mampu berkonsentrasi sejenak, perlu banyak perubahan dan variasi agar tidak bosan", type: "Sanguine" }
         ]
     }
 ];
 
+// Peta (Mapping) untuk nama lengkap Personality Plus
+const personalityNames = {
+    "Sanguine": "Populer Sanguine",
+    "Choleric": "Kuat Choleric",
+    "Melancholic": "Sempurna Melancholic",
+    "Phlegmatic": "Damai Phlegmatic"
+};
+
 // Data Deskripsi Hasil
 const personalityDescriptions = {
-    "Sanguinis": {
-        title: "Hasil pemetaan kepribadian anda adalah Sanguinis",
-        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama mas Ali Mahfud"
+    "Sanguine": {
+        title: "Populer Sanguine",
+        description: "Anda adalah pribadi yang ceria, optimis, dan karismatik. Anda suka bersosialisasi dan memiliki energi yang menular. Anda sering menjadi 'pesta itu sendiri' dan mudah beradaptasi dengan lingkungan baru. Kekuatan: Sangat baik dalam berkomunikasi dan membangun hubungan, memiliki rasa humor yang tinggi. Kelemahan: Cenderung impulsif, mudah bosan, dan terkadang tidak terorganisir."
     },
-    "Koleris": {
-        title: "Hasil pemetaan kepribadian anda adalah Koleris",
-        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama mas Ali Mahfud"
+    "Choleric": {
+        title: "Kuat Choleric",
+        description: "Anda adalah pemimpin yang lahir alami. Anda memiliki tekad yang kuat, suka tantangan, dan tidak takut mengambil risiko. Anda sangat terfokus pada tujuan dan hasil. Kekuatan: Memiliki kemampuan kepemimpinan yang luar biasa, produktif, dan efisien. Kelemahan: Cenderung dominan, mudah tidak sabar, dan sulit menunjukkan emosi atau kehangatan."
     },
-    "Melankolis": {
-        title: "Hasil pemetaan kepribadian anda adalah Melankolis",
-        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama mas Ali Mahfud"
+    "Melancholic": {
+        title: "Sempurna Melancholic",
+        description: "Anda adalah pemikir yang mendalam, analitis, dan perfeksionis. Anda sangat menghargai detail, keteraturan, dan ketepatan. Anda memiliki standar yang tinggi untuk diri sendiri dan orang lain. Kekuatan: Sangat terorganisir dan teliti, mampu menemukan masalah yang terlewatkan orang lain. Kelemahan: Cenderung sensitif, bisa terlalu kritis, dan mudah merasa cemas."
     },
-    "Plegmatis": {
-        title: "Hasil pemetaan kepribadian anda adalah Plegmatis",
-        description: "Untuk penjelasan lebih detail dari kepribadian tersebut, akan dijelaskan dalam sesi bersama mas Ali Mahfud"
+    "Phlegmatic": {
+        title: "Damai Phlegmatic",
+        description: "Anda adalah pribadi yang tenang, sabar, dan santai. Anda suka menjaga harmoni dan menghindari konflik. Anda adalah pendengar yang baik dan sering menjadi penengah dalam grup. Kekuatan: Sangat sabar dan mudah diajak bekerja sama, memiliki kemampuan diplomatik yang baik. Kelemahan: Kurang memiliki dorongan atau motivasi diri, cenderung pasif, dan sulit mengambil keputusan."
     }
 };
 
@@ -386,10 +394,10 @@ const personalityDescriptions = {
 let currentQuestionIndex = 0;
 let userAnswers = {}; // Menyimpan jawaban pengguna
 let scores = {
-    "Sanguinis": 0,
-    "Koleris": 0,
-    "Melankolis": 0,
-    "Plegmatis": 0
+    "Sanguine": 0,
+    "Choleric": 0,
+    "Melancholic": 0,
+    "Phlegmatic": 0
 };
 
 // Dapatkan Elemen HTML
@@ -411,7 +419,8 @@ function startQuiz() {
     introContainer.classList.add('hidden');
     quizContainer.classList.remove('hidden');
     currentQuestionIndex = 0;
-    userAnswers = {}; // Reset jawaban
+    userAnswers = {};
+    scores = { "Sanguine": 0, "Choleric": 0, "Melancholic": 0, "Phlegmatic": 0 };
     showQuestion();
 }
 
@@ -449,14 +458,13 @@ function selectAnswer(type) {
     const buttons = optionsContainer.querySelectorAll('.option-button');
     buttons.forEach(btn => btn.classList.remove('selected'));
     
-    const selectedButton = Array.from(buttons).find(btn => btn.textContent === quizQuestions[currentQuestionIndex].options.find(opt => opt.type === type).text);
+    const selectedButton = Array.from(buttons).find(btn => btn.textContent.includes(type));
     if (selectedButton) {
         selectedButton.classList.add('selected');
     }
 }
 
 function calculateAndShowResult() {
-    scores = { "Sanguinis": 0, "Koleris": 0, "Melankolis": 0, "Plegmatis": 0 };
     for (const key in userAnswers) {
         if (userAnswers.hasOwnProperty(key)) {
             scores[userAnswers[key]]++;
